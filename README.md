@@ -20,5 +20,8 @@ Python script to create SQL file for manually updating accessory assignments.
 # Installation
 This python script was written in Python 2.7. I'm not familiar with writing requirements.txt or setup.py installation scripts yet so to get it to run in your local environment, I recommend using pyenv virtualenv to install Python 2.7. Then, I would look at the imports in the update_accessory_assignments.py file, and manually install them. All of them shouldn't require a pip installation except for PyInquirer (I think). 
 
+# Using the .sql File in SnipeIt
+Once you get run the script successfully and the .sql looks correct, ssh into your SnipeIt server (or wherever your database is). Move the .sql file to that server. Then, **make a backup of your database** FIRST! Once you have your .sql file over there and your database backed up, I ran `mysql -u <user> -p snipedb < <your .sql file>.sql` to ingest your changes into SnipeIt. Check your accessories page and you should see that the quantities available have changed to reflect the new assignments.
+
 # Disclaimer
 This script was written very quickly as an ad hoc fix for a local environment I was working in. I understand that it is most likely not the most efficient or pretty chunk of code, but it worked for the purposes of creating the .sql script I needed to update the database correctly.
