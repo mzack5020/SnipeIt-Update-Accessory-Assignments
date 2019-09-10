@@ -1,0 +1,6 @@
+{
+    "accessoriesFile": "<YOUR ACCESSORIES FILE INPUT (i.e. accessory_assignments.sql)>",
+    "accessoriesUrl": "<YOUR SNIPE IT API FOR ACCESSORIES (usually /api/v1/accessories)>",
+    "apiToken": "<YOUR SNIPEIT API TOKEN>",
+    "updatedAccessoriesName": "<YOUR OUTPUT SQL FILE NAME (i.e. updated_accessories.sql)>"
+}
